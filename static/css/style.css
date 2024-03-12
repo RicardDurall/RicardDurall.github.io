@@ -110,8 +110,8 @@ a {
 .about-us-text {
   flex-basis: 100%; /* Take up the full width on smaller screens */
   margin-top: 30px; /* Add margin at the top for spacing */
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: 10%;
+  margin-left: 10%;
   font-size: 18px; 
   text-align: justify;
 }
@@ -127,7 +127,6 @@ a {
 
 .about-us-image {
   max-width: 100%;
-  height: 420px;
   border-radius: 10%;
 }
 

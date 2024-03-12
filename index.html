@@ -7,12 +7,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_demo.css') }}">
+    <link rel="stylesheet" href="static/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/style_demo.css">
     <title>BOSC</title>
-    <link rel="icon" href="{{ url_for('static', filename='images/logo.svg') }}" type="image/png">
+    <link rel="icon" href="static/images/logo.svg" type="image/png">
 
 </head>
 <body>
@@ -30,16 +30,15 @@
     <div class="container">
         <div class="row extra-row align-items-center">
             <div class="col-11 col-xl-2" style="display: flex; align-items: center;">
-                <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" width="35" height="35">
-                <h1 class="mb-0 site-logo"><a href="{{ url_for('index') }}" class="text-white font-weight-bolder mb-0" style="margin-left: 10px;" >BOSC</a></h1>
+                <img src="static/images/logo.svg" alt="Logo" width="35" height="35">
+                <h1 class="mb-0 site-logo"><a href="index.html" class="text-white font-weight-bolder mb-0" style="margin-left: 10px;" >BOSC</a></h1>
             </div>
             <div class="col-12 col-md-10 d-none d-xl-block">
                 <nav class="site-navigation position-relative text-right" role="navigation">
                     <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-                        <li class="active"><a href="{{ url_for('index') }}"><span>Home</span></a></li>
-                        <li><a href="{{ url_for('demo') }}"><span>Demo</span></a></li>
-                        <li><a href="{{ url_for('about') }}"><span>About Us</span></a></li>
-                        <li><a href="{{ url_for('contact') }}"><span>Contact</span></a></li>
+                        <li class="active"><a href="index.html"><span>Home</span></a></li>
+                        <li><a href="about.html"><span>About Us</span></a></li>
+                        <li><a href="contact.html"><span>Contact</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,11 +53,11 @@
 
 <div class="hero">
     <video class="hero-video" autoplay muted loop playsinline>
-        <source src="{{ url_for('static', filename='images/trim.mp4') }}" type="video/mp4">
+        <source src="static/images/trim.mp4" type="video/mp4">
     </video>
     <p class="hero-text"><b> BOSC</b> is an innovative tech initiative aiding local farmers in forest resource management through AI technology, promoting sustainability and harmony with the environment.<br>
-        <i>The project is in its third stage, offering a labeling tool for tree crown identification from aerial imagery as well as a otrhomosaic engine. 
-        You can access a <a href="{{ url_for('demo') }}">demo</a>, and for further details, please reach out to <a href="{{ url_for('contact') }}">us</a>.
+        <i>The project is in its third stage, offering a labeling toolbox for aerial imagery as well as a mapping engine. 
+        For further details, please reach out to <a href="contact.html">us</a>.
         </i>
     </p>
     <iframe class="hero-thumbnail" src="https://www.youtube.com/embed/_1nK8pVkIqw"></iframe>
