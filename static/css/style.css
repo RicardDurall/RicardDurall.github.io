@@ -90,7 +90,6 @@ a {
 }
 
 .copyright {
-  position: fixed;
   bottom: 5px;
   width: 100%;
   color: rgb(90,111,97);
@@ -110,10 +109,35 @@ a {
 .about-us-text {
   flex-basis: 100%; /* Take up the full width on smaller screens */
   margin-top: 30px; /* Add margin at the top for spacing */
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 20%;
+  margin-left: 20%;
   font-size: 18px; 
   text-align: justify;
+}
+
+.docu-text {
+  flex-basis: 100%;
+  margin-top: 30px;
+  margin-right: 20%;
+  margin-left: 20%;
+  font-size: 18px; 
+  text-align: justify;
+}
+
+/* For larger screens */
+@media screen and (min-width: 1600px) {
+  .docu-text embed {
+    width: 100%; /* Take up full width */
+    height: 850px; /* Set height to 800px */
+  }
+}
+
+/* For smaller screens */
+@media screen and (max-width: 1599px) {
+  .docu-text embed {
+    width: 100%; /* Take up full width */
+    height: 550px; /* Set height to 500px */
+  }
 }
 
 .about-us-item {
@@ -126,7 +150,9 @@ a {
 }
 
 .about-us-image {
-  max-width: 100%;
+  width: 100%; /* Set the width to 100% so it adjusts based on the container */
+  max-width: 280px; /* Set the maximum width of the image */
+  height: auto; /* Allow the height to adjust proportionally */
   border-radius: 10%;
 }
 
