@@ -1,1 +1,0 @@
-# RicardDurall.github.io
