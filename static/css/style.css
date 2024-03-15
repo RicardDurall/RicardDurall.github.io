@@ -90,6 +90,7 @@ a {
 }
 
 .copyright {
+  position: static;
   bottom: 5px;
   width: 100%;
   color: rgb(90,111,97);
